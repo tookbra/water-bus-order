@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.tookbra.water.order.view.MainFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="669" height="514"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="77861" binding="tabbedPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="78157" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="余票查询"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="1a8b0" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="查询条件"/>
+                <children>
+                  <component id="392a3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="航线"/>
+                    </properties>
+                  </component>
+                  <component id="297e9" class="javax.swing.JComboBox" binding="shipComboBox">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="(进嵊)沈家湾--泗礁"/>
+                        <item value="(出嵊)泗礁--沈家湾--南浦"/>
+                        <item value="(进枸)沈家湾--枸杞"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="5fef0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="日期"/>
+                    </properties>
+                  </component>
+                  <component id="204af" class="javax.swing.JTextField" binding="timeTxt">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="578" class="javax.swing.JButton" binding="ticketSearchButton">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <enabled value="true"/>
+                      <text value="查询"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="37892" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="1" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="查询结果"/>
+                <children>
+                  <component id="8d68a" class="javax.swing.JTable" binding="shipTable">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <autoCreateColumnsFromModel value="true"/>
+                      <autoCreateRowSorter value="true"/>
+                      <gridColor color="-12236470"/>
+                      <rowHeight value="30"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="53ea1" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="船票预定"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1f09f" class="javax.swing.JButton" binding="startRunButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="开始抢票"/>
+                </properties>
+              </component>
+              <component id="3e632" class="javax.swing.JTextArea" binding="logTextArea">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <lineWrap value="true"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5c77c" binding="settingPanel" layout-manager="GridLayoutManager" row-count="10" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="设置"/>
+            </constraints>
+            <properties>
+              <name value="设置"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="true"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9bc9a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="抢票时间"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="8e285" class="javax.swing.JTextField" binding="timeSettingTxt">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="07:30:00"/>
+                </properties>
+              </component>
+              <component id="43562" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="航线"/>
+                </properties>
+              </component>
+              <component id="1b5d9" class="javax.swing.JComboBox" binding="shipSettingComboBox">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="(进嵊)沈家湾--泗礁"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="c8f2d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="5" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="开航时间(进嵊)"/>
+                </properties>
+              </component>
+              <component id="74ab4" class="javax.swing.JButton" binding="settingButton">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="保存"/>
+                </properties>
+              </component>
+              <component id="a35eb" class="javax.swing.JCheckBox" binding="a0750CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="07:50"/>
+                </properties>
+              </component>
+              <component id="7c103" class="javax.swing.JCheckBox" binding="a0840CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="08:40"/>
+                </properties>
+              </component>
+              <component id="263b1" class="javax.swing.JCheckBox" binding="a0910CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="09:10"/>
+                </properties>
+              </component>
+              <component id="91758" class="javax.swing.JCheckBox" binding="a0940CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="09:40"/>
+                </properties>
+              </component>
+              <component id="2a980" class="javax.swing.JCheckBox" binding="a0950CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="09:50"/>
+                </properties>
+              </component>
+              <component id="5f02c" class="javax.swing.JCheckBox" binding="a1250CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="12:50"/>
+                </properties>
+              </component>
+              <component id="fc02c" class="javax.swing.JCheckBox" binding="a1300CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="13:00"/>
+                </properties>
+              </component>
+              <component id="76022" class="javax.swing.JCheckBox" binding="a1610CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="16:10"/>
+                </properties>
+              </component>
+              <component id="d993" class="javax.swing.JCheckBox" binding="a1620CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="16:20"/>
+                </properties>
+              </component>
+              <component id="83464" class="javax.swing.JCheckBox" binding="a1640CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="16:40"/>
+                </properties>
+              </component>
+              <component id="653e5" class="javax.swing.JCheckBox" binding="a1700CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="17:00"/>
+                </properties>
+              </component>
+              <component id="e9377" class="javax.swing.JCheckBox" binding="a1710CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="17:10"/>
+                </properties>
+              </component>
+              <component id="95306" class="javax.swing.JCheckBox" binding="a1030CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10:30"/>
+                </properties>
+              </component>
+              <component id="65741" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="限购张数"/>
+                </properties>
+              </component>
+              <component id="3ada6" class="javax.swing.JTextField" binding="orderNumTxt">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="50"/>
+                </properties>
+              </component>
+              <component id="977e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="舱位优先"/>
+                </properties>
+              </component>
+              <component id="fd7be" class="javax.swing.JRadioButton" binding="topRadioButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value=""/>
+                  <text value="上舱"/>
+                </properties>
+              </component>
+              <component id="c4790" class="javax.swing.JRadioButton" binding="middleRadioButton">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="中舱"/>
+                </properties>
+              </component>
+              <component id="6696" class="javax.swing.JRadioButton" binding="footerRadioButton">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="下舱"/>
+                </properties>
+              </component>
+              <component id="55895" class="javax.swing.JCheckBox" binding="a1920CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="19:20"/>
+                </properties>
+              </component>
+              <component id="cc943" class="javax.swing.JCheckBox" binding="a1000CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10:00"/>
+                </properties>
+              </component>
+              <component id="c7e63" class="javax.swing.JCheckBox" binding="a1010CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10:10"/>
+                </properties>
+              </component>
+              <component id="1ff2b" class="javax.swing.JCheckBox" binding="a1220CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="12:20"/>
+                </properties>
+              </component>
+              <component id="8975d" class="javax.swing.JCheckBox" binding="a1210CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="12:10"/>
+                </properties>
+              </component>
+              <component id="4fdab" class="javax.swing.JCheckBox" binding="a1050CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10:50"/>
+                </properties>
+              </component>
+              <component id="27689" class="javax.swing.JCheckBox" binding="a1035CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10:35"/>
+                </properties>
+              </component>
+              <component id="949d" class="javax.swing.JCheckBox" binding="a1340CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="13:40"/>
+                </properties>
+              </component>
+              <component id="7b968" class="javax.swing.JCheckBox" binding="a1330CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="13:30"/>
+                </properties>
+              </component>
+              <component id="29ff5" class="javax.swing.JCheckBox" binding="a1320CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="13:20"/>
+                </properties>
+              </component>
+              <component id="84cc7" class="javax.swing.JCheckBox" binding="a1600CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="16:00"/>
+                </properties>
+              </component>
+              <component id="dd2f3" class="javax.swing.JCheckBox" binding="a1550CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="15:50"/>
+                </properties>
+              </component>
+              <component id="6d17f" class="javax.swing.JCheckBox" binding="a1530CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="15:30"/>
+                </properties>
+              </component>
+              <component id="fb196" class="javax.swing.JCheckBox" binding="a1510CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="15:10"/>
+                </properties>
+              </component>
+              <component id="97fb5" class="javax.swing.JCheckBox" binding="a1440CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="14:40"/>
+                </properties>
+              </component>
+              <component id="d094c" class="javax.swing.JCheckBox" binding="a1430CheckBox1" default-binding="true">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="14:30"/>
+                </properties>
+              </component>
+              <component id="f164e" class="javax.swing.JCheckBox" binding="a1400CheckBox" default-binding="true">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="14:00"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8c7c4" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="关于"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ab4ed" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <font size="36"/>
+                  <text value=" 水上客运自动购票"/>
+                </properties>
+              </component>
+              <component id="f71a0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Proudly by 喵了个咪"/>
+                </properties>
+              </component>
+              <component id="68142" class="javax.swing.JLabel" binding="versionLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft YaHei UI"/>
+                  <text value="版本：v_0.0.1"/>
+                </properties>
+              </component>
+              <component id="beefe" class="javax.swing.JLabel" binding="checkUpdateLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="检查更新"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="berthGroup" bound="true">
+      <member id="fd7be"/>
+      <member id="c4790"/>
+      <member id="6696"/>
+    </group>
+  </buttonGroups>
+</form>
